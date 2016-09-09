@@ -9,5 +9,6 @@ Preview
 )
 
 GIF效果图展示：
-![Icon Round Corner Progress Bar Usage](https://github.com/TheMelody/LotteryTrend/blob/master/LotteryChart_pic2.gif
+=====================
+![Image](https://github.com/TheMelody/LotteryTrend/blob/master/LotteryChart_pic2.gif
 )
