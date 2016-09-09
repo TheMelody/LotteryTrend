@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_wh"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/item_wh"
+            android:gravity="center"
+            android:text="期号"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_wh"
+            android:background="#aaddbb"
+            android:orientation="horizontal">
+
+            <org.devloper.melody.lotterytrend.widget.HeaderHorizontalScrollView
+                android:id="@+id/trend_header_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_wh"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <org.devloper.melody.lotterytrend.widget.HeadCustomGridView
+                        android:id="@+id/grid_trend_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </org.devloper.melody.lotterytrend.widget.HeaderHorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <org.devloper.melody.lotterytrend.widget.LeftNumberSynchScrollView
+                android:id="@+id/scroll_left"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <org.devloper.melody.lotterytrend.widget.LeftNumberCustomListView
+                        android:id="@+id/lv_number"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </org.devloper.melody.lotterytrend.widget.LeftNumberSynchScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <org.devloper.melody.lotterytrend.widget.TrendScrollViewWidget
+                android:id="@+id/scroll_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none">
+
+                <org.devloper.melody.lotterytrend.widget.TrendView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </org.devloper.melody.lotterytrend.widget.TrendScrollViewWidget>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.5"
+        android:background="#ffccdd"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="选号:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#aaddbb"
+            android:orientation="horizontal">
+
+            <org.devloper.melody.lotterytrend.widget.HeaderHorizontalScrollView
+                android:id="@+id/trend_footer_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_wh"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/grid_trend_footer"
+                        android:listSelector="#00000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </org.devloper.melody.lotterytrend.widget.HeaderHorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/item_wh"
+            android:gravity="center"
+            android:text="漏选"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_wh">
+            <TextView
+                android:id="@+id/tv_result"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_wh" />
+            <ImageView
+                android:id="@+id/iv_trend_yes"
+                android:layout_width="30.66666666666667dp"
+                android:layout_height="30.66666666666667dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/trend_bet_yes"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
