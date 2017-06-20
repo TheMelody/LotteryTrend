@@ -10,7 +10,7 @@ ___
 </p>
 (14年写好的demo,清理垃圾文件看到了还有个走势图的demo)
 
-GIF效果图展示：Figure is too big, can download to see the effect
+GIF效果图展示：
 （gif图比较大，可以下载下来看效果）
 =====================
 ![Image](https://github.com/TheMelody/LotteryTrend/blob/master/LotteryChart_pic2.gif
