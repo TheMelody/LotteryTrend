@@ -2,7 +2,7 @@
 ___
 彩票双色球走势图Trend <br/>
 技术交流群：
-欢迎加入💩玩转Android，群号码：490113234
+欢迎加入QQ群：490113234
 -------------------------
 <p>
   <a target="_blank" href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#DONUT"><img src="https://img.shields.io/badge/API-14%2B-blue.svg?style=flat" alt="API" /></a>
